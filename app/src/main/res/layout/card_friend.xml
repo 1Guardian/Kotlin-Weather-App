@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_friend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#282A35"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="194dp"
+            android:layout_height="299dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Rating"
+            app:layout_constraintVertical_bias="0.125"></ImageView>
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:foregroundGravity="center_vertical|center"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/Rating"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical|center"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilename"></TextView>
+
+        <TextView
+            android:id="@+id/profilesummary"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ellipsize="end"
+            android:foregroundGravity="center_vertical|center"
+            android:maxLines="5"
+            android:scrollHorizontally="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileimage"
+            app:layout_constraintVertical_bias="0.405"></TextView>
+
+        <TextView
+            android:id="@+id/profileaddress"
+            android:layout_width="236dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/profileimage"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/profilenumber"
+            android:layout_width="236dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/profileimage"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

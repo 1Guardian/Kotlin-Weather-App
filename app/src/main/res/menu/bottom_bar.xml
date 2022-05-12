@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popMovies"
+        android:icon="@drawable/popmovieicon"
+        android:title="Popular Movies" />
+    <item
+        android:id="@+id/popPeople"
+        android:icon="@drawable/person_icon_bl"
+        android:title="Popular People" />
+    <item
+        android:id="@+id/upMovies"
+        android:icon="@drawable/upmovieicon"
+        android:title="Upcoming Movies" />
+</menu>
